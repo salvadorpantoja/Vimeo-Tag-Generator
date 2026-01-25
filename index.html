@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+  <main id="main">
+  <head>
+    <title>Vimeo Tag Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+<!-- HEADER -->
+ <header>
+    <h1 id="title">Vimeo Tag Generator</h1>
+    <p id="description"><i>Quickly create tags for your videos on Vimeo.<br>Simply fill out this form and copy and paste the results to your Vimeo video's tags</i></h>
+</header>
+
+
+
+<!-- FORM -->
+
+  <form id="form">
+  <div class="form-control">
+
+  <!-- Attorney Names -->
+  <label>Attorney Names (comma seperated):</label>
+  <input type="text" id="attorneys" type="text" placeholder="Enter attorney names">
+  <br>
+  
+<!-- Campaign Name -->
+
+  <div class="form-control">
+    <label for="campaign" id="campaign-label">Campaign Name:</label>
+    <input id="campaign" type="text" placeholder="Enter campaign name">
+  </div>
+  
+
+
+  <!-- Marketing Number -->
+
+  <div class="form-control">
+    <label for="marketing-num" id="marketing-num-label">Internal Ticket ID:</label>
+    <input id="marketing-num" type="text" placeholder="Enter project's marketing central number">
+  </div>
+  <br>
+
+
+
+<!-- Capabilities-->
+
+   <div class="form-control">
+    
+    <label id="capabilities-label">Video Category:</label>
+        
+    <label for="corporate"><input id="corporate" type="checkbox" name="type" value=' COR,''>Corporate</label>
+        
+    <label for="employment"><input type="checkbox" id="employment" name="capabilities" value=" EMP,">Employment</label>
+  
+    <label for="finance"><input type="checkbox" id="finance" name="capabilities" value=" FIN,">Finance</label>
+       
+    <label for="ip-and-tech"><input type="checkbox" id="ip-and-tech" name="capabilities" value=" IPT,">Intellectual Property and Technology</label>
+      
+    <label for="investment-funds"><input type="checkbox" id="investment-funds" name="capabilities" value=" IF,">Investment Funds</label>
+   
+    <label for="litigation"><input type="checkbox" id="litigation" name="capabilities" value=" LIT,">Litigation</label>
+    
+    <label for="private-equity"><input type="checkbox" id="private-equity" name="capabilities" value=" PE,">Private Equity</label>
+        
+    <label for="real-estate"><input type="checkbox" id="real-estate" name="capabilities" value=" RE,">Real Estate</label>
+      
+    <label for="regulatory-gov-affairs"><input type="checkbox" id="regulatory-gov-affairs" name="capabilities" value=" RGA,">Regulatory and Government Affairs</label>
+  
+    <label for="tax"><input type="checkbox" id="tax" name="capabilities" value="TAX">Tax</label>
+    
+    <label for="goods-food-retail"><input type="checkbox" id="goods-food-retail" name="capabilities" value=" CGR,">Consumer Goods, Food and Retail</label>
+    
+    <label for="energy-nat-resources"><input type="checkbox" id="energy-nat-resources" name="capabilities" value=" ENR,">Energy and Natural Resources</label>
+    
+    <label for="fin-services"><input type="checkbox" id="fin-services" name="capabilities" value=" FIN,">Financial Services</label>
+    
+    <label for="healthcare"><input type="checkbox" id="healthcare" name="capabilities" value=" HEA,">Healthcare</label>
+    
+    <label for="industrials"><input type="checkbox" id="industrials" name="capabilities" value=" IND,">Industrials</label>
+    
+    <label for="insurance"><input type="checkbox" id="insurance" name="capabilities" value=" INS,">Insurance</label>
+    
+    <label for="invest-funds"><input type="checkbox" id="invest-funds" name="capabilities" value=" IF,">Investment Management and Funds</label>
+    
+    <label for="life-sciences"><input type="checkbox" id="life-sciences" name="capabilities" value=" LS,">Life Sciences</label>
+    
+    <label for="media-sprts-ent"><input type="checkbox" id="media-sprts-ent" name="capabilities" value=" MSE,">Media, Sport and Entertainment</label>
+    
+    <label for="merge-aqui"><input type="checkbox" id="merge-aqui" name="capabilities" value=" M&A,">Mergers and Acquisitions</label>
+    
+    <label for="restructuring"><input type="checkbox" id="restructuring" name="capabilities" value=" RES,">Restructuring</label>
+    
+    <label for="technology"><input type="checkbox" id="technology" name="capabilities" value=" TECH,">Technology</label>
+
+  </div>
+
+
+   <!-- Video Type -->
+
+   <div class="form-control">
+    <label for="dropdown-a" id="vaccine-label">Video Type:</label>
+    <select id="dropdown-1" name="video-type">
+        <option value="empty"></option>  
+        <option value="creativer">Creative</option>
+        <option value="event">Event</option>
+  
+        </select>
+    </div>
+   
+    
+
+  
+  <!-- VIDEO TEAM -->
+
+  <div class="form-control">
+    <label for="video-team" id="video-team-label">Video Team:</label>
+        
+    <label for="us-video-team"><input id="us-video-team" type="checkbox" name="video-team" value=" US Video Team,">US Video Team</label>
+        
+    <label for="international"><input type="checkbox" id="international" name="video-team" value=" International,">International</label>
+  
+    <label for="vendor"><input type="checkbox" id="vendor" name="video-team" value=" Vendor,">Vendor</label>
+    
+  </select>
+  </div>
+  
+  
+    <!-- DISTRIBUTION -->
+  
+    <div class="form-control">
+      <label for="distribution" id="distribution-label">Distribution:</label>
+      <select id="dropdow-2" name="distribution">
+          <option value="none"></option>  
+          <option value="internal">Internal</option>
+          <option value="external">External</option>
+          <option value="both">Both</option>
+    
+          </select>
+      </div>
+
+
+<!-- SUBMIT BUTTON-->
+
+  <button type="submit" id="submit" class="submit-button">Submit</button>
+ 
+  </form>
+
+  <br>
+ 
+
+  <h3>Copy the code below to your Vimeo tags input</h3>
+  
+  <h2><i>Please note that you can only input up to 100 characters at one time to the Vimeo 'Tags' input area, so your tags will need to be split up accordingly.</i></h2>
+
+  <div>
+  <result-box class="output-textarea" id="result">Your tag results will appear here.</result-box>
+  </div>
+
+  <br>
+
+
+  <footer>
+    <h4><i>Vimeo Tag Maker v1.3<br>Designed and coded by Salvador Pantoja</i><h4>
+    </footer>
+
+</body>
+
+
+<!-- Link to the external JavaScript file "script.js" -->
+
+<script src="scripts.js"></script> 

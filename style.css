@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap');
+
+/*-- Main IDs --*/
+
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif; GENERIC_NAME;
+  background-color: #16253F;
+  text-align: center;
+  font-size: 16px;
+}
+
+header {
+  padding: 50px;
+}
+
+h1 {
+  margin-top: 0;
+  color: white;
+ 
+  text-shadow: 3px 3px 3px rgba(0,0,0,.15);
+}
+
+p {
+  color: rgb(217,220,66);
+  line-height: 1.5;
+}
+
+
+h2  {
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  color: gray;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 15px;
+  font-family: 'Hind Madurai', sans-serif; GENERIC_NAME;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 7px;
+  
+}
+
+h4 {
+  font-size: 14px;
+  font-family: inherit;
+  text-align: center;
+  font-weight: lighter;
+  color: gray;
+
+}
+  
+
+form {
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.15);
+  border-radius: 2px;
+  padding: 30px 20px 3px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+/* Classes */
+
+.form-control {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+  
+
+}
+
+.form-control input{
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  background: rgb(108, 92, 231, .1)
+}
+
+.form-control select {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: inherit;
+  display: block;
+  width: 70%;
+  background: rgb(108, 92, 231, .1);
+}
+
+
+.form-control input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin: 5px;
+  
+}
+
+
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin: 5px;
+  
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.700rem;
+  resize: vertical;
+  font:"inherit";
+  margin-top: 10px;
+}
+
+.output-textarea {
+  min-height: 200px;
+  width: 100%;
+  padding: 0.700rem;
+  resize: vertical;
+  font:"inherit";
+  margin-top: 0px;
+  background: rgb(224,224,224)
+}
+
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; j
+  background: rgb(108, 92, 231, .1);
+}
+ 
+
+  
+.submit-button {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #D9DC42;
+  color: inherit;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+
+
+result-box {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: inherit;
+  display: inline-block;
+  width: 100%;
+  background: rgb(108, 92, 231, .1)
+
+}
+
+<!-- Background -- !>
+
+
+
+
