@@ -1,45 +1,45 @@
-# Vimeo Tag Formatter
+# Vimeo Tag Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://salvadorpantoja.dev/vimeoTagMaker/)
 
-A browser-based utility designed to automate metadata formatting for video upload workflows. This tool eliminates manual data entry errors by converting list-based inputs into Vimeo-compliant, comma-separated tag strings.
+A browser-based tool that enforces strict metadata naming conventions by programmatically generating tags. It replaces an error-prone manual process with a standardized UI, ensuring 100% syntax compliance for video uploads.
 
 ## 🚀 Live Demo
 **[View Live Project Here](https://salvadorpantoja.dev/vimeoTagMaker/)**
 
 ## 💡 The Problem
-Video platforms like Vimeo require tags to be comma-separated strings (e.g., `tag1, tag2, tag3`). However, most internal content calendars and project management tools provide metadata in vertical lists or excel columns.
+Our team was issued a complex manual on how to tag videos for analytics (e.g., specific syntax for tags and required fields.
 
-Manually reformatting these tags for hundreds of videos is:
-1.  **Time-consuming:** Copy-pasting individual lines takes hours.
-2.  **Error-prone:** It is easy to miss a comma or exceed character limits.
-3.  **Inconsistent:** Different team members format metadata differently.
+Attempting to recreate this syntax manually for every upload resulted in:
+1.  **Human Error:** Typos and incorrect variable ordering broke search functionality.
+2.  **High Cognitive Load:** Users had to memorize arbitrary formatting rules.
+3.  **Inconsistent Data:** Minor variations in tagging made library management difficult.
 
 ## 🛠 The Solution
-I built this tool to act as a "middleware" between project management software and the Vimeo upload interface.
+I built this application to abstract away the syntax rules. Users simply select options and input raw data, and the application creates the required string structure in the background.
 
 **Key Features:**
-*   **Instant Formatting:** Converts new-line separated lists into API-ready comma-separated strings.
-*   **Smart Validation:** Automatically checks for Vimeo's specific constraints (character limits per batch).
-*   **Standardized Categories:** Dropdown selection ensures category metadata matches the official video taxonomy.
-*   **One-Click Copy:** Streamlines the user workflow with clipboard integration.
+*   **Logic Abstraction:** Users interact with simple form fields; the app handles the complex concatenation logic.
+*   **Standardized Output:** Ensures every video is tagged with the exact same format, regardless of who uploads it.
+*   **Clipboard Integration:** One-click copying prevents transcription errors.
+*   **Immediate Feedback:** Visualizes the final tag structure before submission.
 
 ## 💻 Tech Stack
 *   **HTML5 / CSS3:** Semantic markup and responsive layout.
-*   **JavaScript (ES6+):** Logic for string manipulation, character counting, and DOM interaction.
+*   **JavaScript (ES6+):** DOM manipulation and string interpolation logic.
 
 ## 🔧 Usage
-1.  Select the **Video Category** from the dropdown.
-2.  Paste your list of tags (from Excel, Trello, email, etc.) into the input area.
-3.  Enter the **Project Reference ID** (optional).
-4.  Click **Generate Tags**.
-5.  Use the **Copy** button to grab the formatted string for Vimeo.
+1.  Select the required **Category** and **Project Type** from the dropdowns.
+2.  Input the variable data (Reference IDs, categories, etc.).
+3.  Click **Generate Tags**.
+4.  The app constructs the final string based on internal syntax rules.
+5.  Click **Copy** to use in Vimeo.
 
 ## 📂 Project Structure
 ```text
 /
-├── index.html       # Main application structure
+├── index.html       # UI and Input Fields
 ├── styles.css       # Custom styling 
-├── script.js        # Logic for parsing and formatting
+├── script.js        # Syntax generation logic
 └── README.md        # Documentation
