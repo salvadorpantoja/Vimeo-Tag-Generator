@@ -9,7 +9,7 @@ A browser-based tool that enforces strict metadata naming conventions by program
 **[View Live Project Here](https://salvadorpantoja.dev/vimeoTagMaker/)**
 
 ## 💡 The Problem
-Our team was issued a complex manual on how to tag videos for analytics (e.g., specific syntax for tags and required fields.
+Our video team was issued a complex manual on how to tag videos for analytics (e.g., specific syntax for tags and required fields.
 
 Attempting to recreate this syntax manually for every upload resulted in:
 1.  **Human Error:** Typos and incorrect variable ordering broke search functionality.
