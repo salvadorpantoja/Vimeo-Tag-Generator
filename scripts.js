@@ -129,7 +129,11 @@
       if (document.getElementById('restructuring').checked) {
         capabilities += document.getElementById('restructuring').value;
       }
-      
+    
+      if (document.getElementById('sustainability').checked) {
+        capabilities += document.getElementById('sustainability').value;
+      }
+
       if (document.getElementById('technology').checked) {
         capabilities += document.getElementById('technology').value;
       }
